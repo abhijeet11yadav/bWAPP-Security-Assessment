@@ -1,0 +1,24 @@
+cd /path/to/project
+git init
+Create .gitignore
+touch .gitignore
+git status
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git remote -v
+git branch -M main
+
+First push
+git push -u origin main
+git pull origin main --allow-unrelated-histories
+
+Push again
+git push -u origin main
+
+
+Future pushes
+
+git add .
+git commit -m "Updated project"
+git push
