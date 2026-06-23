@@ -1,0 +1,134 @@
+# Methodology
+
+## 1. Environment Setup
+
+* Deployed the bWAPP application in a controlled local laboratory environment.
+* Configured the testing browser and proxy tools.
+* Verified application functionality and accessibility before testing.
+
+## 2. Vulnerability Validation
+
+* Accessed all vulnerability modules intentionally provided by bWAPP.
+* Tested each vulnerability according to the application's functionality.
+* Verified exploitation of the vulnerabilities and documented the results.
+* Collected screenshots, HTTP requests, HTTP responses, and evidence for each finding.
+
+## 3. Information Gathering
+
+* Identified application pages, features, forms, parameters, and user roles.
+* Enumerated available functionalities and input vectors.
+* Mapped attack surfaces exposed by the application.
+
+## 4. Manual Vulnerability Assessment
+
+Performed manual testing against the application to identify additional security weaknesses beyond those explicitly demonstrated by bWAPP.
+
+### Authentication Testing
+
+* Login functionality review
+* Password policy assessment
+* Session management testing
+* Logout functionality verification
+
+### Authorization Testing
+
+* Privilege escalation testing
+* Direct object reference testing
+* Access control validation
+
+### Input Validation Testing
+
+* HTML Injection
+* Cross-Site Scripting (XSS)
+* SQL Injection
+* Command Injection
+* LDAP Injection
+* XML Injection
+* Server-Side Template Injection (SSTI)
+
+### File Handling Testing
+
+* File Upload Testing
+* File Download Testing
+* Path Traversal Testing
+* Local File Inclusion (LFI)
+* Remote File Inclusion (RFI)
+
+### Session Security Testing
+
+* Session fixation testing
+* Session hijacking assessment
+* Cookie security review
+
+### Business Logic Testing
+
+* Workflow manipulation
+* Parameter tampering
+* Client-side validation bypass
+
+## 5. Traffic Analysis
+
+* Intercepted and analyzed HTTP/HTTPS requests using Burp Suite.
+* Modified requests to evaluate server-side validation controls.
+* Reviewed application responses for security weaknesses.
+
+## 6. Risk Assessment
+
+* Evaluated each finding based on:
+
+  * Impact
+  * Likelihood
+  * Exploitability
+  * Business Risk
+
+* Assigned severity levels:
+
+  * Critical
+  * High
+  * Medium
+  * Low
+  * Informational
+
+## 7. Evidence Collection
+
+* Captured screenshots of successful exploitation.
+* Recorded proof-of-concept requests and responses.
+* Documented affected parameters and application behavior.
+
+## 8. Reporting
+
+For each identified vulnerability:
+
+* Vulnerability Name
+* Description
+* Affected Module
+* Severity Rating
+* Proof of Concept
+* Impact
+* Risk Analysis
+* Remediation Recommendations
+* References
+
+## 9. Remediation Validation
+
+* Reviewed the implemented security controls.
+* Re-tested vulnerabilities after remediation where applicable.
+* Verified effectiveness of security fixes.
+
+## Tools Used
+
+* Burp Suite Community Edition
+* Firefox Browser
+* Developer Tools
+* Kali Linux / Parrot OS
+* bWAPP Test Environment
+
+## Testing Approach
+
+The assessment followed a combination of:
+
+* Black Box Testing
+* Grey Box Testing
+* Manual Security Testing
+* OWASP Testing Methodology
+* Verification of intentionally vulnerable bWAPP modules
