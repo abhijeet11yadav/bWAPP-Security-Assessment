@@ -1,0 +1,27 @@
+# Burp Suite
+*.burp
+burp/*
+BurpSuite*
+*.state
+
+# Logs
+*.log
+
+# Secrets
+.env
+.env.local
+
+# API Keys
+secrets.txt
+config/secrets/*
+
+# Session files
+*.session
+
+# Backups
+*.bak
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
